@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>26_10_20</title>
+    <link rel="stylesheet" href="CSS/style.css" type="text/css">
+    <style>
+        p{
+            color: red;
+            background-color: aqua;
+        }
+        input{
+            width: 200px;
+        }
+        p{ color: darkblue;
+            background-color: yellow;
+
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Προσωπικα στοιχεια</legend>
+        Email:<input type="email" name='user' placeholder="γραφεις εδω το email σους" required><br>
+        Username:<input type="text" name='email' placeholder="email" readonly><br>
+        <p style="color: green;">Ημ.Γεννησης</p>
+        <input type="date">
+        <p>Χωρα : </p>
+        <select name='country' multiple>
+            <optgroup label="Ελλαδα">
+            <option>Αττικη</option>
+            <option>Θεσσαλονικη</option>
+            <option>υπ.Ελλαδα</option>
+            </optgroup> 
+            <optgroup label="Ευρωπη">
+                <option>Κυπρος</option>
+                <option>Ιταλια</option>
+                <option>Ισπανια</option>
+            </optgroup>
+            <optgroup label="Υπολοιπος Κοσμος">
+            <option>Σουδαν</option>
+            <option>Βραζιλια</option>
+            </optgroup> 
+          
+        </select><br>
+        </fieldset>  
+        <fieldset>
+            <legend>Προτιμησεις</legend>
+        <p>Αγαπημενα Μαθηματα</p>
+        <label><input type="checkbox" name="class" checked>HTML</label>
+        <label><input type="checkbox" name="class">CSS</label>
+        <label><input type="checkbox" name="class">JAVASCRIPT</label>
+        <label><input type="checkbox" name="class">JAVA</label>
+
+        <p>Ποσο σ'αρεσει η html</p>
+        <input type="range">
+
+        <p>Να διαλεξεις το αγαπημενο σου χρωμα</p>
+            <input type="color" >
+        <p>Λιγα πραγματα για σενα</p>
+        <textarea name="comments" rows="5" cols="50">
+
+        </textarea><br>
+        </fieldset>     
+        <input type='submit' value='Sign up'>
+    </form>
+</body>
+</html>
